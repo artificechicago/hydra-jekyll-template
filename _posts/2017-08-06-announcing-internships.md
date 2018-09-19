@@ -2,7 +2,7 @@
 date: 2017-08-06
 title: Announcing Two New Internships 
 categories:
-  - opportunities
+  - announcements
 author_community_member: will
 ---
 In partnership with the University of Chicago Office of Civic engagement, we are excited to offer two internship opportunities to our community members.  See the links below for more details.

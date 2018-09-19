@@ -29,6 +29,7 @@ layout: default
 
 <div class="darkcenter" style="	background: #2b2b40;color: #fff;text-align:center; padding:60px 0">
 	<h2 >Our Community</h2>
+	<p>The volunteers that make this all possible</p>
 		<ul class="community">
 			{% for person in site.community_members %}
 				<li>
@@ -43,8 +44,8 @@ layout: default
 <div class="content">
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
-			<h2>News and Updates</h2>
-			<p class="subtext">Updates and mentions in the press.</p>
+			<h2>Our History</h2>
+			<p class="subtext">Important milestones in the growth of our organization</p>
 			<div class="text-container">
 				<ul class="blog-posts">
 					{% include list-posts.html posts=paginator.posts %}
