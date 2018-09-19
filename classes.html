@@ -2,7 +2,7 @@
 title: Classes
 heading: View more about each of our locations
 description: 
-pricing_table:
+classes_table:
   - name: Ray
     color: "#8e8e8e"
     features:
@@ -62,13 +62,13 @@ faq:
     answer: Credit cards including MasterCard, Visa or American Express.
   - question: Can I change my plan at a later time?
     answer: Yes, you can upgrade and downgrade your plan at anytime.
-  - question: Do you offer pricing for nonprofit organizations?
-    answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
+  - question: Do you offer classes for nonprofit organizations?
+    answer: Yes, send us a message and we'll set you up on our nonprofit classes.
   - question: Questions?
     answer: Contact us for any further questions at <a href="#">john@business.com</a>.
 ---
 <div class="plans">
-	{% for plan in page.pricing_table %}
+	{% for plan in page.classes_table %}
 		<ul class="plan">
 			<li style="background: {{ plan.color }}">
 				<h3>{{ plan.name }}</h3>
@@ -78,14 +78,14 @@ faq:
 			{% endfor %}
 
 			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+				<li class="classes-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
 			{% endif %}
 		</ul>
 	{% endfor %}
 </div>
 
 {% if page.faq %}
-	<h2>Pricing FAQ</h2>
+	<h2>Classes FAQ</h2>
 	<dl class="faq">
 		{% for item in page.faq %}
 			<div>

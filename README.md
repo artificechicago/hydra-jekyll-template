@@ -17,7 +17,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Ac
 * Blog with pagination
 * Post category pages
 * Disqus comments for posts
-* Staff and author system
+* Community and author system
 * Configurable footer
 * Optimised for editing in [CloudCannon](http://cloudcannon.com/)
 * RSS/Atom feed
@@ -48,12 +48,12 @@ $ bundle exec jekyll serve
 
 ## Editing
 
-Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
+Hydra is already optimised for adding, updating and removing pages, community, advice, company details and footer elements in CloudCannon.
 
 ### Posts
 
 * Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
+* The **community Author** field links to members in the **community** collection.
 * Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
 * Change the defaults when new posts are created in `_posts/_defaults.md`.
 
@@ -62,7 +62,7 @@ Hydra is already optimised for adding, updating and removing pages, staff, advic
 * Preconfigured to work with CloudCannon, but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
 * Sends email to the address listed in company details.
 
-### Staff
+### Community
 
 * Reused around the site to save multiple editing locations.
 * Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.

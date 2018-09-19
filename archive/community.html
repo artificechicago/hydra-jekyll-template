@@ -1,0 +1,13 @@
+---
+title: Come Join Us!
+description: the @rtifice family
+---
+<ul class="community">
+	{% for person in site.community_members %}
+		<li>
+			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
+			<div class="name"><a target="_blank" href="{{ person.website }}">{{ person.name }}</a></div>
+			<div class="position">{{ person.position }}</div>
+		</li>
+	{% endfor %}
+</ul>

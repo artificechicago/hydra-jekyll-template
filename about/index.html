@@ -1,0 +1,70 @@
+---
+title: About @rtifice
+layout: default
+---
+
+<section class="testimonial">
+	<div class="container flex">
+		<div class="testimonial-block">
+			<!-- <div class="square-image"><img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiC68DCqsbdAhW8IDQIHVKsAi4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.gamesradar.com%2Fblack-panther-director-breaks-down-what-makes-tchalla-special-hes-the-kind-of-leader-that-you-want%2F&psig=AOvVaw38QTDz-RdExH88d9a42W3b&ust=1537421134057195" alt="T'Challa" class="editable"></div> -->
+			<blockquote>
+				<p class="editable">In times of crisis, the wise build bridges while the foolish build barriers.</p>
+				<p class="editable author">T'Challa, King of Wakanda</p>
+			</blockquote>
+		</div>
+	</div>
+	<section style="padding:50px">
+		<div class="container flex">
+			<div class="text editable">
+				<h2>Our Mission</h2>
+				<p>Artifice is a Woodlawn-based organization that uses project-based, hands-on learning to endow participants with the tech and entrepreneurial skills that will make them the masters of their own destiny.</p>
+			</div>
+			<div class="image">
+				<img src="/images/peteandkids.jpg" alt="Screenshot" class="screenshot editable" />
+			</div>
+		</div>
+	</section>
+</section>
+
+
+<div class="darkcenter" style="	background: #2b2b40;color: #fff;text-align:center; padding:60px 0">
+	<h2 >Our Community</h2>
+		<ul class="community">
+			{% for person in site.community_members %}
+				<li>
+					<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
+					<div class="name"><a target="_blank" href="{{ person.website }}">{{ person.name }}</a></div>
+					<div class="position">{{ person.position }}</div>
+				</li>
+			{% endfor %}
+		</ul>
+</div>
+
+<div class="content">
+	<section class="page">
+		<div class="container {% if page.full_width %}max-container{% endif %}">
+			<h2>News and Updates</h2>
+			<p class="subtext">Updates and mentions in the press.</p>
+			<div class="text-container">
+				<ul class="blog-posts">
+					{% include list-posts.html posts=paginator.posts %}
+				</ul>
+
+				{% if paginator.total_pages > 1 %}
+					<!-- Pagination links -->
+					<div class="pagination">
+						{% if paginator.previous_page %}
+							<a href="{% include relative-src.html src=paginator.previous_page_path %}" class="previous btn">&larr; Newer posts</a>
+						{% endif %}
+
+						<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+						{% if paginator.next_page %}
+							<a href="{% include relative-src.html src=paginator.next_page_path %}" class="next btn">Older posts &rarr;</a>
+						{% endif %}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</section>
+</div>

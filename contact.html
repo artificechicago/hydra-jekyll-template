@@ -4,13 +4,11 @@ heading: Get in touch today
 description: We'd love to help you improve your sales.
 
 map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
-  zoom: 13
+  latitude: 41.777114
+  longitude: -87.586793
+  address: "6460 S Stony Island Ave, Chicago, IL 60637"
+  zoom: 14
 ---
-<div class="map" id="map"></div>
-
 
 <div class="contact-box">
 	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
@@ -37,6 +35,9 @@ map:
 		<p><a href="mailto:support@example.com">support@example.com</a></p>
 	</div>
 </div>
+
+<div class="map" id="map"></div>
+
 
 <script type="text/javascript">
 	window.mapData = {{ page.map | jsonify }};

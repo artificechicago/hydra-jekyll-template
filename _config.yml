@@ -13,8 +13,8 @@ logo: /siteicon.png
 description: Intelligent Tech Education
 author:
   name: 
-  email: 
-  twitter: # twitter username without the @ symbol
+  email:
+  website: # twitter username without the @ symbol
 social:
   name: Artifice Chicago
   links:
@@ -26,11 +26,11 @@ social:
 timezone: Etc/UTC
 
 collections:
-  staff_members:
+  community_members:
     _hide_content: true
 
-paginate: 10
-paginate_path: "/news/:num/"
+paginate: 4
+paginate_path: "/about/:num/"
 permalink: pretty
 
 defaults:
@@ -47,7 +47,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "staff_members"
+      type: "community_members"
     values:
       _options:
         image_path:
@@ -109,3 +109,4 @@ _comments:
   highlight: Emphasis the text
   color: The background colour used in the plan name and call to action.
   new_window: Open link in new window
+

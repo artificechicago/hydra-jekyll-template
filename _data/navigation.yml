@@ -1,24 +1,20 @@
-- name: Our Classes
-  link: /classes/
-  new_window: false
-  highlight: false
-- name: News & Updates
-  link: /news/
-  new_window: false
-  highlight: false
-- name: Our Team
-  link: /volunteers/
+- name: About
+  link: /about/
   new_window: false
   highlight: false
 - name: Contact
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: /
-  new_window: true
-  highlight: false
 - name: Blog
   link: http://blog.artificechicago.org
   new_window: true
   highlight: false
+- name: Enroll in a Class
+  link: /classes/
+  new_window: false
+  highlight: true
+- name: Volunteer
+  link: /classes/
+  new_window: false
+  highlight: true
