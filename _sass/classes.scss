@@ -29,9 +29,16 @@
 			}
 		}
 
+		@media #{$phone} {
+			@include flex(1, 1, 15%);
+		}
+
+		@media #{$tablet} {
+			@include flex(1, 1, 15%);
+		}
+
 		@media #{$desktop} {
-			-webkit-flex: 1;
-			flex: 1;
+			@include flex(1, 1, 15%);
 		}
 
 		li {
@@ -55,7 +62,7 @@
 	color: #666;
 	div {
 		break-inside: avoid;
-		padding: 25px 0;
+		padding: 25px 30px;
 	}
 
 	dt {

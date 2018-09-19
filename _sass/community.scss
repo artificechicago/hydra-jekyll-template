@@ -10,11 +10,11 @@
 		width: 100%;
 
 		@media #{$tablet} {
-			@include flex(1, 1, 45%);
+			@include flex(1, 1, 10%);
 		}
 
 		@media #{$desktop} {
-			@include flex(1, 1, 15%);
+			@include flex(1, 1, 10%);
 		}
 
 	}
@@ -26,6 +26,10 @@
 				width: 100px;
 				height: 100px;
 				border-radius: 200px;
+
+			}
+			@media #{$phone} {
+				display:none;
 			}
 		}
 
