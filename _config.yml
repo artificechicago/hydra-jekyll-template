@@ -67,13 +67,7 @@ defaults:
     scope:
       path: "contact.html"
     values:
-      full_width: true
-  - 
-    scope:
-      path: ''
-      type: categories
-    values:
-      layout: category
+      full_width: true  
 
 jekyll-archives:
 
