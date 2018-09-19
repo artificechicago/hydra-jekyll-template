@@ -69,6 +69,8 @@
 			text-align: left;
 
 			a {
+				pointer-events: none;
+   				cursor: default;
 				position: relative;
 				top: -5px;
 			}
@@ -103,11 +105,13 @@
 .blog-filter {
 	text-align: center;
 	a {
+		pointer-events: none;
+   		cursor: default;
 		background: #eee;
-    padding: 3px 5px;
-    font-size: .8em;
-    border-radius: 5px;
-    color: #888;
+	    padding: 3px 5px;
+	    font-size: .8em;
+	    border-radius: 5px;
+	    color: #888;
 		transition: .2s ease-in-out;
 
 		&:hover {
