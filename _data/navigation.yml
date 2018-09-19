@@ -1,13 +1,13 @@
-- name: Pricing
-  link: /pricing/
+- name: Our Classes
+  link: /classes/
   new_window: false
   highlight: false
-- name: Blog
-  link: /blog/
+- name: News & Updates
+  link: /news/
   new_window: false
   highlight: false
-- name: About
-  link: /about/
+- name: Our Team
+  link: /volunteers/
   new_window: false
   highlight: false
 - name: Contact
@@ -18,7 +18,7 @@
   link: /
   new_window: true
   highlight: false
-- name: Sign Up
-  link: /
+- name: Blog
+  link: http://blog.artificechicago.org
   new_window: true
-  highlight: true
+  highlight: false
