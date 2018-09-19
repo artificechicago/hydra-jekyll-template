@@ -2,7 +2,7 @@
 title: About @rtifice
 layout: default
 ---
-
+{% if paginator.page == 1 %}
 <section class="testimonial">
 	<div class="container flex">
 		<div class="testimonial-block">
@@ -41,11 +41,18 @@ layout: default
 		</ul>
 </div>
 
+{% endif %}
+
 <div class="content">
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
-			<h2>Our History</h2>
-			<p class="subtext">Important milestones in the growth of our organization</p>
+			{% if paginator.page == 1 %}
+
+				<h2>Our History</h2>
+				<p class="subtext">Important milestones in the growth of our organization</p>
+			{% else %}
+				<h2>Archive</h2>
+			{% endif %}
 			<div class="text-container">
 				<ul class="blog-posts">
 					{% include list-posts.html posts=paginator.posts %}
