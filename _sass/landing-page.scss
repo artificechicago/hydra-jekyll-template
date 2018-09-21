@@ -35,8 +35,26 @@
 	color: #ffffff;
 	text-align: center;
 	background-size:100%;
-	padding-top: 50px;
+	padding-bottom:20px; 
+	padding-top: 10px;
 	position:relative;
+	background-repeat:no-repeat; 
+
+
+	@media #{$tablet}{
+		min-height:200px;
+		padding: 0;
+	}
+
+
+	@media #{$desktop}{
+		min-height:300px;
+		padding: 20px;
+
+		.cta {
+			padding: 40px;
+		}
+	}
 
 	p {
 		color: #fff;

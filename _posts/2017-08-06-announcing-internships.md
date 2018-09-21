@@ -1,5 +1,5 @@
 ---
-date: 2017-08-06
+date: 2017-07-06
 title: Announcing Two New Internships 
 categories:
   - announcements

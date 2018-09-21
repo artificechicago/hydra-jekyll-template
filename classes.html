@@ -6,27 +6,25 @@ classes_table:
   - name: Ray Elementary, Hyde Park
     color: "#8e8e8e"
     features:
-      - text: Monday 4-5
+      - text: Beginners Wednesday 4-5
         highlight: false
-      - text: Thursday 4-5
+      - text: Advanced Thursday 4-5
         highlight: false
-      - text: Cost $60
-        highlight: true
     call_to_action:
       link: 
       text: Enroll in Class
   - name: Woodlawn Center
-    color: "#000000"
+    color: "#4a4a4a"
     features:
-      - text: Open Thursday 3-5
+      - text: Open Tuesdays and Thursdays 3-5
         highlight: false
-      - text: Free for first 2 weeks<br/>scholarships available after
+      - text: open for all ages - kids under 10 must be accompanied
         highlight: true
     call_to_action:
       link: http://blog.artificechicago.org/p/favorites.html
       text: See what we've been working on
   - name: Hyde Park Neighborhood Club
-    color: "#4a4a4a"
+    color: "#a4a4a4"
     features:
       - text: Available to HPNC students
         highlight: false
@@ -36,12 +34,10 @@ classes_table:
       link: http://hpnclub.org/index.php/about/contact-us/
       text: Contact HPNC to learn more
   - name: Bret Harte Elementary, Hyde Park
-    color: "#4a4a4a"
+    color: "#1b1b1b"
     features:
-      - text: Thursday 4-6
+      - text: "Thursday 3:30-6"
         highlight: false
-      - text: Cost $60
-        highlight: true
     call_to_action:
       link: 
       text: Enroll in Class
@@ -49,12 +45,17 @@ faq:
   - question: How do I know if I'm signed up for a class?
     answer: If you have completed the form and made your payment, you are signed up.  Sometimes schools don't update their class rosters frequently.  
   - question: A class has already started for this quarter.  Can I still join?
-    answer: Generally, you can join up to a few weeks after the start if you are willing to put in the effort to catch up.
+    answer: Possible, you can join up to a few weeks after the start if you are willing to put in the effort to catch up.
+  - question: What kinds of things do you teach?
+    answer: We teach a variety of tech skills.  Check out our <a href="{{site.url}}{{site.baseurl}}/contact/">course material</a> for more information.  
   - question: Can you offer classes at my organization?
     answer: Possibly, we are always looking for partner organizations if we have volunteer bandwidth.  Feel free to <a href="{{site.url}}{{site.baseurl}}/contact/">contact us</a> with opportunities.
-  - question: Questions?
-    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+  - question: Any other questions?
+    answer: Contact us for any further questions <a href="/contact/">info@artificechicago.com</a>.
 ---
+
+<p style="text-align:center;font-size:1.2em">Check out our <a href="http://blog.artificechicago.org/p/events-calendar.html">Events Calendar</a> for more events.</p>
+
 <div class="plans">
 	{% for plan in page.classes_table %}
 		<ul class="plan">
@@ -71,6 +72,7 @@ faq:
 		</ul>
 	{% endfor %}
 </div>
+
 
 {% if page.faq %}
 	<h2>Classes FAQ</h2>
